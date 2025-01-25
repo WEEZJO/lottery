@@ -1,0 +1,95 @@
+/* تغيير الخلفية إلى صورة لجبال عمان */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/amman-mountains.jpg');
+    background-size: cover; /* لتغطية كامل الشاشة */
+    background-position: center center; /* لضمان أن الصورة في المنتصف */
+    color: #fff; /* تغيير النصوص إلى اللون الأبيض */
+    margin: 0;
+    padding: 0;
+}
+
+/* الرأس */
+header {
+    background-color: rgba(46, 139, 87, 0.8); /* اللون الأخضر مع الشفافية */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #fff;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* قسم المعالم */
+.intro {
+    padding: 30px;
+    text-align: center;
+}
+
+.intro .images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.intro .images img {
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* إضافة بعض الظلال للصور */
+}
+
+/* تاريخ السحب */
+.draw-date {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffcc00; /* لون مميز لتاريخ السحب */
+    margin-top: 20px;
+}
+
+/* نموذج الاشتراك */
+.subscribe {
+    background-color: rgba(255, 255, 255, 0.9); /* خلفية بيضاء مع شفافية */
+    padding: 30px;
+    margin: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0;
+    color: #333; /* لون النصوص داخل النموذج */
+}
+
+input, select, button {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #2e8b57;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1c6d44;
+}
+
+/* الفوتر */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(46, 139, 87, 0.8); /* نفس اللون الأخضر مع الشفافية */
+    color: white;
+    border-top: 5px solid #fff;
+}

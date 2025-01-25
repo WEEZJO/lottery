@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قرعة الأردن</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.paypal.com/sdk/js?client-id=ATpzPpJ5qx8RIKsf9r4oJCYRvWNM9SFkCRd-4aJumq_464cPOwMOsMoaJd5AjGHpDdyuNl006r8HIx-2&components=buttons"></script> <!-- PayPal Script -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>قرعة الأردن</h1>
+            <p>اشترك الآن لفرصة الفوز بجائزة 30,000 دينار أردني!</p>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="images">
+            <img src="images/petra.jpg" alt="البتراء" />
+            <img src="images/dead-sea.jpg" alt="البحر الميت" />
+            <img src="images/amman.jpg" alt="عمان" />
+        </div>
+        <p>اشترك في السحب الآن وكن من الفائزين!</p>
+        <!-- إضافة تاريخ السحب -->
+        <p class="draw-date">تاريخ السحب: 01/07/2025</p>
+    </section>
+
+    <section class="subscribe">
+        <h2>انضم الآن إلى السحب!</h2>
+        <form id="payment-form">
+            <label for="name">الاسم الكامل:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">رقم الهاتف:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="payment">طريقة الدفع:</label>
+            <select id="payment" name="payment">
+                <option value="credit_card">بطاقة ائتمان (Visa / MasterCard)</option>
+                <option value="paypal">PayPal</option>
+                <option value="zain_cash">زين كاش</option>
+                <option value="orange_money">أورانج موني</option>
+                <option value="bank_transfer">تحويل بنكي (EFAWATEERcom)</option>
+            </select>
+
+            <button type="submit">اشترك الآن مقابل 0.5 قرش</button>
+        </form>
+        
+        <!-- PayPal button will be rendered here -->
+        <div id="paypal-button-container"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 قرعة الأردن. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
